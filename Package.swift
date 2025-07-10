@@ -1,44 +1,34 @@
-// swift-tools-version: 5.7
+// swift-tools-version:5.7
+
 import PackageDescription
 
 let package = Package(
-    name: "SASTCSATestSuite",
+    name: "VulnerableApp",
     platforms: [
-        .iOS(.v13),
-        .macOS(.v10_15)
+        .iOS(.v13)
     ],
-    products: [
-        .library(
-            name: "SASTCSATestSuite",
-            targets: ["SASTCSATestSuite"]
-        ),
-    ], 
-    dependencies: [ 
-        // CSA testing dependencies - strategically older/vulnerable versions
-        .package(url: "https://github.com/Alamofire/Alamofire.git",
-                 exact: "4.9.1"),                    // Older version with known issues
-        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git",
-                 exact: "4.3.0"),                    // Potential parsing vulnerabilities
-        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git",
-                 exact: "3.2.1"),                    // Keychain access patterns
-        .package(url: "https://github.com/realm/realm-swift.git",
-                 exact: "5.4.8"),                    // Database ORM with potential issues
-        .package(url: "https://github.com/socketio/socket.io-client-swift.git",
-                 exact: "15.2.0"),                   // WebSocket implementation
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git",
-                 exact: "5.8.4"),                    // Image processing library
+    dependencies: [
+        // Known vulnerable version of Alamofire (e.g., 5.4.3 had CVE-2022-31093)
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("5.4.3")),
+        
+        // SwiftyJSON version with known memory handling issues (hypothetical CVE)
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "4.0.0"),
+
+        // CryptoSwift with older CVEs (e.g., CVE-2020-26217 in versions <1.3.8)
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.3.0"))
     ],
     targets: [
         .target(
-            name: "SASTCSATestSuite",
+            name: "VulnerableApp",
             dependencies: [
                 "Alamofire",
                 "SwiftyJSON",
-                "KeychainAccess",
-                .product(name: "Realm", package: "realm-swift"),
-                .product(name: "SocketIO", package: "socket.io-client-swift"),
-                "SDWebImage"
+                "CryptoSwift"
             ]
         ),
+        .testTarget(
+            name: "VulnerableAppTests",
+            dependencies: ["VulnerableApp"]
+        )
     ]
 )
