@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/nishadali/Downloads/swidt/.build/index-build/arm64-apple-macosx/debug/SwiftyJSON.build/master.swiftdeps"
+  },
+  "/Users/nishadali/Downloads/swidt/.build/index-build/checkouts/SwiftyJSON/Source/SwiftyJSON/SwiftyJSON.swift": {
+    "dependencies": "/Users/nishadali/Downloads/swidt/.build/index-build/arm64-apple-macosx/debug/SwiftyJSON.build/SwiftyJSON.d",
+    "object": "/Users/nishadali/Downloads/swidt/.build/index-build/arm64-apple-macosx/debug/SwiftyJSON.build/SwiftyJSON.swift.o",
+    "swiftmodule": "/Users/nishadali/Downloads/swidt/.build/index-build/arm64-apple-macosx/debug/SwiftyJSON.build/SwiftyJSON~partial.swiftmodule",
+    "swift-dependencies": "/Users/nishadali/Downloads/swidt/.build/index-build/arm64-apple-macosx/debug/SwiftyJSON.build/SwiftyJSON.swiftdeps"
+  }
+}
