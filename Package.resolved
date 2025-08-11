@@ -1,0 +1,86 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "aead0c0c675e1b4e6a0e8e8d0d7b5a8b4c1c5a7c",
+        "version" : "4.7.0"
+      }
+    },
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "revision" : "7d0e5b4c8a2b3d4e5f6a7b8c9d0e1f2a3b4c5d6e",
+        "version" : "3.2.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core",
+      "state" : {
+        "revision" : "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "revision" : "9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "socket.io-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/socketio/socket.io-client-swift.git",
+      "state" : {
+        "revision" : "5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f",
+        "version" : "15.0.0"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b",
+        "version" : "0.11.5"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream",
+      "state" : {
+        "revision" : "b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0",
+        "version" : "3.1.0"
+      }
+    },
+    {
+      "identity" : "swiftyjson",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "state" : {
+        "revision" : "d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0",
+        "version" : "5.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
